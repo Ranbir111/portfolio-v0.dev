@@ -3,7 +3,7 @@
 // Note: No instances of undefined variable "L" found in this file.
 // The error might be coming from an imported component or a typo in a variable name.
 import { useState } from 'react'
-import { Github, Linkedin, Mail, ExternalLink, Download, ChevronRight, Code, Globe, Briefcase, GraduationCap } from "lucide-react"
+import { Github, Linkedin, Mail, Download, ChevronRight, Code, Globe, Briefcase, GraduationCap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -81,16 +81,16 @@ export function PortfolioComponent() {
           <h1 className="text-5xl font-bold mb-4">Ranbir Kumar Gupta</h1>
           <p className="text-2xl text-gray-300 mb-6">Full Stack Developer & Tech Enthusiast</p>
           <div className="flex justify-center space-x-4 mb-8">
-          <a href="https://github.com/Ranbir111"  target="_blank">
+            <Link href="https://github.com/Ranbir111" target="_blank">
               <Button variant="outline" size="icon">
                 <Github className="h-5 w-5" />
               </Button>
-            </a>
-            <a href="https://www.linkedin.com/in/ranbir-kumar-gupta-4b506427b"  target="_blank">
+            </Link>
+            <Link href="https://www.linkedin.com/in/ranbir-kumar-gupta-4b506427b" target="_blank">
               <Button variant="outline" size="icon">
                 <Linkedin className="h-5 w-5" />
               </Button>
-            </a>
+            </Link>
             <Button variant="outline" size="icon">
               <Mail className="h-5 w-5" />
             </Button>
@@ -107,14 +107,14 @@ export function PortfolioComponent() {
         <section className="mb-20">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
           <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 mb-4">{`
               I'm a passionate full stack developer with 2+ years of experience in building scalable web applications.
               My expertise spans across front-end and back-end technologies, with a strong focus on creating
-              user-centric solutions that drive business growth.
+              user-centric solutions that drive business growth.`}
             </p>
-            <p className="text-gray-300">
+            <p className="text-gray-300">{`
               When I'm not coding, you can find me exploring new technologies, contributing to open-source projects,
-              or sharing my knowledge through tech blogs and community meetups.
+              or sharing my knowledge through tech blogs and community meetups.`}
             </p>
           </div>
         </section>
