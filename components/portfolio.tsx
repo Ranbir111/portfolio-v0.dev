@@ -146,12 +146,16 @@ export function PortfolioComponent() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-between">
-                    <Button variant="outline" size="sm">
-                      <Globe className="mr-2 h-4 w-4" /> Live Demo
-                    </Button>
-                    <Button variant="outline" size="sm">
-                      <Code className="mr-2 h-4 w-4" /> Source Code
-                    </Button>
+                    <Link href={project.link} target='_blank'>
+                      <Button variant="outline" size="sm">
+                        <Globe className="mr-2 h-4 w-4" /> Live Demo
+                      </Button>
+                    </Link>
+                    <Link href={project.github} target='_blank'>
+                      <Button variant="outline" size="sm">
+                        <Code className="mr-2 h-4 w-4" /> Source Code
+                      </Button>
+                    </Link>
                   </CardFooter>
                 </Card>
               ))}
